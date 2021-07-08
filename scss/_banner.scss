@@ -1,0 +1,62 @@
+// Banner Part Start
+#banner{
+  background: url(../images/background.jpg);
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .overly{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: $colorBlack;
+    opacity: 0.6;
+    .banner-text{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      h2{
+        font-family: $fontHerader;
+        color: $colorWhite;
+        font-size: 55px;
+        font-weight: 700;
+      }
+      h4{
+        font-family: $fontHerader;
+        font-weight: 600;
+        font-size: 30px;
+        color: $colorWhite;
+        span{
+          color: yellow;
+        }
+      }
+      p{
+        color: $colorWhite;
+        max-width: 600px;
+        font-size: 16px;
+        font-family: $fontParagrap;
+        margin-top: 25px;
+      }
+      a{
+        width: 30px;
+        height: 30px;
+        background: $colorWhite;
+        border-radius: 50%;
+        color: $colorWhite;
+        margin-top: 40px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 15px;
+        transition: all linear .3s;
+        &:hover{
+          transform: rotate(360deg);
+        }
+        i{
+          color: black;
+        }
+      }
+    }
+  }
+}
